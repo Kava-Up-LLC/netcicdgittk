@@ -1,0 +1,30 @@
+# Change the following to your desired values:
+#   __ACCOUNT_NUMBER__
+#   __ECR_REGION__
+#   __ECR_REPOSITORY_NAME__
+#   __ECS_CONTAINER_NAME__
+
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - aws --version
+      - aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 306456023534.dkr.ecr.us-east-2.amazonaws.com
+      - REPOSITORY_URI=306456023534.dkr.ecr.us-east-2.amazonaws.com/netcorecicd
+      - IMAGE_TAG=16f62ffaf7784fdbb744177c3e10367f
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...          
+      - docker build -t netcorecicd .
+      - docker tag netcorecicd 306456023534.dkr.ecr.us-east-2.amazonaws.com/netcorecicd:16f62ffaf7784fdbb744177c3e10367f
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker images...
+      - docker push 306456023534.dkr.ecr.us-east-2.amazonaws.com/netcorecicd:16f62ffaf7784fdbb744177c3e10367f
+      - echo Writing image definitions file...
+      - printf '[{"name”:"netcorecicd","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+artifacts:
+  files: imagedefinitions.json
