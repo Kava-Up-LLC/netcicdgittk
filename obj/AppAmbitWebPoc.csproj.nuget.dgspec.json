@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/takrim/Documents/GitHub/netcorecicd/AppAmbitWebPoc/AppAmbitWebPoc.csproj": {}
+    "/Users/takrim/sandbox/appambit/appambitwebpoc/netcicdgittk/AppAmbitWebPoc.csproj": {}
   },
   "projects": {
-    "/Users/takrim/Documents/GitHub/netcorecicd/AppAmbitWebPoc/AppAmbitWebPoc.csproj": {
+    "/Users/takrim/sandbox/appambit/appambitwebpoc/netcicdgittk/AppAmbitWebPoc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/takrim/Documents/GitHub/netcorecicd/AppAmbitWebPoc/AppAmbitWebPoc.csproj",
+        "projectUniqueName": "/Users/takrim/sandbox/appambit/appambitwebpoc/netcicdgittk/AppAmbitWebPoc.csproj",
         "projectName": "AppAmbitWebPoc",
-        "projectPath": "/Users/takrim/Documents/GitHub/netcorecicd/AppAmbitWebPoc/AppAmbitWebPoc.csproj",
+        "projectPath": "/Users/takrim/sandbox/appambit/appambitwebpoc/netcicdgittk/AppAmbitWebPoc.csproj",
         "packagesPath": "/Users/takrim/.nuget/packages/",
-        "outputPath": "/Users/takrim/Documents/GitHub/netcorecicd/AppAmbitWebPoc/obj/",
+        "outputPath": "/Users/takrim/sandbox/appambit/appambitwebpoc/netcicdgittk/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/takrim/.nuget/NuGet/NuGet.Config"

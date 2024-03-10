@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppAmbitWebPoc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1e444059070648deebdb2aa7f7e54f0fa1e1ac8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1bdc1e22c0ec1d6d9a20added358306f6dbe4e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppAmbitWebPoc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppAmbitWebPoc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
