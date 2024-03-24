@@ -12,9 +12,9 @@ phases:
       - aws --version
       - echo $AWS_STACK_REGION
       - echo $CONTAINER_NAME
+      - echo $IMAGE_REPO_NAME
+      - echo $IMAGE_TAG
       - aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com
-      - REPOSITORY_URI=306456023534.dkr.ecr.us-east-2.amazonaws.com/netcorecicd
-      - IMAGE_TAG=ee1249db50494e568a551295077ca322
   build:
     commands:
       - echo Build started on `date`
