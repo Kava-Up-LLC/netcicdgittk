@@ -31,9 +31,9 @@ phases:
       - sed -i "s|IMAGE_TAG|${IMAGE_TAG}|g" taskdef.json
       - sed -i "s|TASK_ROLE_ARN|${TASK_ROLE_ARN}|g" taskdef.json
       - sed -i "s|EXECUTION_ROLE_ARN|${EXECUTION_ROLE_ARN}|g" taskdef.json
-      - sed -i "s|TASK_DEFINITION_ARN|${TASK_DEFINITION_ARN}|g" appspec.yaml
-      - cat appspec.yaml && cat taskdef.json
+      - sed -i "s|TASK_DEFINITION_ARN|${TASK_DEFINITION_ARN}|g" appspec.yml
+      - cat appspec.yml && cat taskdef.json
 artifacts:
   files:
-    - "appspec.yaml"
+    - "appspec.yml"
     - "taskdef.json"
