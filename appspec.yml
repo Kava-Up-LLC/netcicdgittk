@@ -6,4 +6,4 @@ Resources:
         TaskDefinition: "TASK_DEFINITION_ARN"
         LoadBalancerInfo:
           ContainerName: "web"
-          ContainerPort: "80"
+          ContainerPort: "8080"
